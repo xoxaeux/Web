@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ment{
+	margin : 0 auto;
+	margin-top: 10px;
+	padding : 5px;
+	height: 250px;
+	width: 500px;
+	border : 1px solid black;
+}
+
+.num-box{
+	background: skyblue;
+	height: 150px;
+	width: 440px;
+	padding : 20px;
+	margin : 0 auto;
+	margin-top : 20px;
+}
+
+.nums{
+	height: 50px;
+	width : 50px;
+	border-radius: 100%;
+    background: yellow;
+}
