@@ -13,18 +13,23 @@
 	border : 1px solid black;
 }
 
-.num-box{
-	background: skyblue;
-	height: 150px;
-	width: 440px;
-	padding : 20px;
-	margin : 0 auto;
-	margin-top : 20px;
+.num-box {
+    background: skyblue;
+    height: 150px;
+    width: 350px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
 .nums{
+	display: inline-block;
+	font-size : 25px;
+	text-align: center;
+	vertical-align: middle;
 	height: 50px;
 	width : 50px;
 	border-radius: 100%;
     background: yellow;
+    margin-right: 5px;
 }
