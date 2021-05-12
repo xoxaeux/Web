@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>게시글 목록</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app" class="container"></div>
+    <script>
+      new Vue({
+        el: "#app",
+        created() {
+          const params = new URL(document.location).searchParams;
+          const no = params.get("no");
+          const board = JSON.parse(localStorage.getItem("board"));
+
+          board.items = board.items.filter((item) => {
+            // no와 같지않은 데이타만 추출 => no와 같은 데이타는 추출하지 않기 때문에 삭제효과
+            return no != item.no;
+          });
+          localStorage.setItem("board", JSON.stringify(board));
+          alert("삭제 완료");
+          location.href = "list.html";
+        },
+      });
+    </script>
+  </body>
+</html>
