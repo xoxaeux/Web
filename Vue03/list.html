@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SSAFY</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+
+  <body>
+    <div id="app" class="container">
+      <list></list>
+    </div>
+    <script type="module">
+      import List from "./component/List.js";
+
+      new Vue({
+        el: "#app",
+        components: {
+          List,
+        },
+      });
+    </script>
+  </body>
+</html>
